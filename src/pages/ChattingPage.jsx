@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ChatBlock from "../components/ChatBlock";
 import logoImage from '../assets/logo.png';
+import sendIcon from '../assets/sendicon.png'
+import '../styles/ChattingPage.css'
 
 const styles= {
     chatBar: {
@@ -25,8 +27,11 @@ const styles= {
     in: {
         width: 1200,
         height: 70,
-        borderRadius: "40px",
+        borderRadius: "20px",
         fontSize: "30px",
+        paddingLeft: "40px",
+        border: "none",
+        boxShadow: '0 1px 4px 1px rgba(0, 0, 0, 0.2)'
     },
     btn_style: {
         display: "inline-block",
@@ -92,12 +97,13 @@ function ChattingPage() {
                     type="text"
                     value={inputValue}
                     onChange={e => setInputValue(e.target.value)}
+                    className='chatinput'
                 />
                 
-                <button style={styles.btn_style} onClick={handleMessageSend}>
+                {/* <button style={styles.btn_style} onClick={handleMessageSend}>
                     입력
-                </button>                
-                
+                </button>                 */}
+                <img src={sendIcon} alt="" className='sendicon' onClick={handleMessageSend}/>
             </div>
         </div>
 

@@ -1,12 +1,15 @@
 import logoImage from '../assets/logo.png'
 import Topic from '../components/Topic';
 import '../styles/SelfSettingPage.css'
-
-function handleClick() {
-    window.location.href = '/chatroom';
-  }
+import { useNavigate } from 'react-router-dom'
 
 const SelfSettingPage = () => {
+    const navigate = useNavigate();
+  
+    function handleClick() {
+        navigate('/chatroom');
+    };
+
     return (
         <div className="SelfSettingPage">
             <img src={logoImage} alt="" className='logoimage'/>

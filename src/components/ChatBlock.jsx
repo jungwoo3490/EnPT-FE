@@ -12,7 +12,7 @@ const styles= {
         transform: "translate(-50%, -50%)",
         backgroundColor: "#DCE4F5",
         padding: "10px",
-        color: "#fff",
+        color: "#4E5560",
         fontSize: "30px",
     },
     text: {
