@@ -1,0 +1,38 @@
+.TopicSettingPage {
+  height: 1080px;
+}
+
+.logoimage {
+  width: 220px;
+  height: 65.8px;
+  margin-left: 94px;
+  margin-top: 85px;
+}
+
+.topicselect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topicmenu {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 33px;
+  column-gap: 34px;
+}
+
+.selfmadebutton {
+  width: 772px;
+  height: 124px;
+  border: none;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  background-color: white;
+  margin-top: 33px;
+}
+
+.selfmadebutton:hover {
+  cursor: pointer;
+}
