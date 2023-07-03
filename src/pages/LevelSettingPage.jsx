@@ -1,7 +1,6 @@
 import logoImage from "../assets/logo.png";
 import LevelBtn from "../components/LevelBtn";
 import "../styles/LevelSettingPage.css";
-import axios from "axios";
 
 const LevelSettingPage = () => {
   return (
@@ -11,6 +10,7 @@ const LevelSettingPage = () => {
         <div
           style={{
             fontSize: "48px",
+            letterSpacing: "-1px",
             fontWeight: "bold",
             height: "60px",
             lineHeight: "60px",
@@ -22,7 +22,8 @@ const LevelSettingPage = () => {
         <div
           style={{
             fontSize: "24px",
-            fontWeight: "700",
+            fontWeight: "500",
+            letterSpacing: "-1px",
             height: "25px",
             lineHeight: "25px",
             color: "#a6a6a6",

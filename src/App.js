@@ -2,7 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import LevelSettingPage from "./pages/LevelSettingPage";
 import TopicSettingPage from "./pages/TopicSettingPage";
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import EndPage from "./pages/EndPage";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LevelSettingPage />} />
           <Route path="/select" element={<TopicSettingPage />} />
+          <Route path="/end" element={<EndPage />} />
         </Routes>
       </div>
     </BrowserRouter>

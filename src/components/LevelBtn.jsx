@@ -5,11 +5,13 @@ const styles = {
   bt: {
     fontSize: "30px",
     fontWeight: "bold",
+    letterSpacing: "-1px",
   },
   ubt: {
     fontSize: "17px",
     color: "grey",
     fontWeight: "bold",
+    letterSpacing: "-1px",
   },
 };
 const LevelBtn = ({ text, underText, onClick, color }) => {

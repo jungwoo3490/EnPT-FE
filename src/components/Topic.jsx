@@ -1,39 +1,36 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import InputComponent from './InputComponent';
+import React from "react";
+import PropTypes from "prop-types";
+import InputComponent from "./InputComponent";
 
-const styles= {
-    bt: {
-        fontSize: "25px",
-        fontWeight: "bold",
-    },
-    ubt: {
-        fontSize: "15px",
-        color: "grey",
-    }
-}
-
+const styles = {
+  bt: {
+    fontSize: "25px",
+    fontWeight: "bold",
+  },
+  ubt: {
+    fontSize: "15px",
+    color: "grey",
+  },
+};
 
 const Topic = ({ onClick, color }) => {
-
   return (
     <button
-      style={{ 
+      style={{
         backgroundColor: color,
         borderRadius: "40px",
         width: 1152,
         height: 101,
         border: "none",
-        boxShadow: "inset 0 1px 4px 1px rgba(0, 0, 0, 0.2)",
-        }}
+        boxShadow: "0 1px 4px 1px rgba(0, 0, 0, 0.2)",
+        letterSpacing: "-1px",
+      }}
       className="button"
       onClick={onClick}
     >
-    <div style={styles.bt}>
-      <InputComponent />
-    </div>
-
-    
+      <div style={styles.bt}>
+        <InputComponent />
+      </div>
     </button>
   );
 };
@@ -41,11 +38,11 @@ const Topic = ({ onClick, color }) => {
 Topic.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 
 Topic.defaultProps = {
-  color: 'blue'
+  color: "blue",
 };
 
 export default Topic;

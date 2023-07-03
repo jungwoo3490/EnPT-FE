@@ -41,6 +41,7 @@ const CategoriBtn = ({ text, underText, imgSrc, onClick, color }) => {
         boxShadow: "0 1px 4px 1px rgba(0, 0, 0, 0.2)",
         paddingLeft: "42px",
         paddingTop: "34px",
+        letterSpacing: "-1px",
       }}
       className="button"
       onClick={onClick}
