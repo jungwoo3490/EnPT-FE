@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import '../styles/InputComponent.css'
 
-function InputComponent() {
-  const [value, setValue] = useState("");
+function InputComponent({ placeholder }) {
+  const [value, setValue] = useState('');
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -9,22 +10,16 @@ function InputComponent() {
 
   const styles = {
     ip: {
-      width: 1100,
-      border: "none",
-      height: 50,
-      fontSize: "20px",
-      letterSpacing: "-1px",
+        width: 1070,
+        border: "none",
+        height: 50,
+        paddingLeft: '50px',
+        fontSize: '24px'
     },
   };
   return (
     <div>
-      <input
-        style={styles.ip}
-        type="text"
-        placeholder="ex) 기자회견 장에서"
-        value={value}
-        onChange={handleChange}
-      />
+      <input className="inputbox" style={styles.ip} type="text" placeholder={placeholder} value={value} onChange={handleChange} />
     </div>
   );
 }

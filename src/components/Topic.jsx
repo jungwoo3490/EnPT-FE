@@ -2,18 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import InputComponent from "./InputComponent";
 
-const styles = {
-  bt: {
-    fontSize: "25px",
-    fontWeight: "bold",
-  },
-  ubt: {
-    fontSize: "15px",
-    color: "grey",
-  },
-};
 
-const Topic = ({ onClick, color }) => {
+const styles= {
+    bt: {
+        fontSize: "25px",
+        fontWeight: "bold",
+    },
+    ubt: {
+        fontSize: "15px",
+        color: "grey",
+    }
+}
+
+
+const Topic = ({ onClick, color, placeholder }) => {
+
   return (
     <button
       style={{
@@ -22,15 +25,17 @@ const Topic = ({ onClick, color }) => {
         width: 1152,
         height: 101,
         border: "none",
-        boxShadow: "0 1px 4px 1px rgba(0, 0, 0, 0.2)",
-        letterSpacing: "-1px",
-      }}
+        boxShadow: "inset 0 1px 4px 1px rgba(0, 0, 0, 0.2)",
+        marginBottom: '36px'
+        }}
       className="button"
       onClick={onClick}
     >
-      <div style={styles.bt}>
-        <InputComponent />
-      </div>
+    <div style={styles.bt}>
+      <InputComponent placeholder={placeholder}/>
+    </div>
+
+    
     </button>
   );
 };
