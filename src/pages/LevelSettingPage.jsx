@@ -1,5 +1,4 @@
 import logoImage from '../assets/logo.png'
-import CategoriBtn from '../components/CategoriBtn';
 import LevelBtn from '../components/LevelBtn';
 import '../styles/LevelSettingPage.css'
 
