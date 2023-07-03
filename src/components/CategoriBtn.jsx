@@ -51,7 +51,7 @@ const CategoriBtn = ({ text, underText, imgSrc, onClick, color }) => {
         <div style={styles.ubt}>{underText}</div>
 
         <div style={styles.img_cage}>
-          <img src={imgSrc} style={{ width: "145px", height: "110px" }} />
+          <img src={imgSrc} style={{ width: "145px", height: "110px" }} alt=""/>
         </div>
       </div>
     </button>
