@@ -14,6 +14,10 @@ const styles = {
     letterSpacing: "-1px",
   },
 };
+
+function handleClick() {
+  window.location.href = '/select';
+}
 const LevelBtn = ({ text, underText, onClick, color }) => {
   return (
     <button
@@ -27,7 +31,7 @@ const LevelBtn = ({ text, underText, onClick, color }) => {
         marginBottom: "30px",
       }}
       className="button"
-      onClick={onClick}
+      onClick={handleClick}
     >
       <div style={styles.bt}>{text}</div>
 

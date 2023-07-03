@@ -2,6 +2,10 @@ import logoImage from '../assets/logo.png'
 import Topic from '../components/Topic';
 import '../styles/SelfSettingPage.css'
 
+function handleClick() {
+    window.location.href = '/chatroom';
+  }
+
 const SelfSettingPage = () => {
     return (
         <div className="SelfSettingPage">
@@ -17,7 +21,12 @@ const SelfSettingPage = () => {
                 <Topic color={'white'} placeholder={'ex) 잡지 기자'}/>
                 <div className='menu'>AI의 역할</div>
                 <Topic color={'white'} placeholder={'ex) 셀럽'}/>
-                <button className='startbutton'>이대로 대화 시작하기</button>
+                <button 
+                    className='startbutton'
+                    onClick={handleClick}
+                >
+                    이대로 대화 시작하기
+                </button>
             </div>
         </div>
     );
