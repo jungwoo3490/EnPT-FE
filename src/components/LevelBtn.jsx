@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 const styles= {
     bt: {
-        fontSize: "25px",
+        fontSize: "30px",
         fontWeight: "bold",
     },
     ubt: {
-        fontSize: "15px",
+        fontSize: "17px",
         color: "grey",
+        fontWeight: "bold",
     }
 }
 const LevelBtn = ({ text, underText, onClick, color }) => {
@@ -21,6 +22,7 @@ const LevelBtn = ({ text, underText, onClick, color }) => {
         height: 100,
         border: "none",
         boxShadow: "inset 0 1px 4px 1px rgba(0, 0, 0, 0.2)",
+        marginBottom: '30px'
         }}
       className="button"
       onClick={onClick}

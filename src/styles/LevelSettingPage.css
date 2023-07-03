@@ -9,3 +9,15 @@
     margin-left: 94px;
     margin-top: 65px;
 }
+
+.test {
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+.testbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
