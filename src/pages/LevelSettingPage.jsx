@@ -3,19 +3,6 @@ import LevelBtn from "../components/LevelBtn";
 import "../styles/LevelSettingPage.css";
 import axios from "axios";
 
-const handleClickButton = async (levelType) => {
-  try {
-    const response = await axios.get("", {
-      //링크 추가 필요
-      params: {
-        levelType: levelType,
-      },
-    });
-    console.log(response.data);
-  } catch (error) {
-    console.log("요청 실패:", error);
-  }
-};
 const LevelSettingPage = () => {
   return (
     <div className="LevelSettingPage">
@@ -45,24 +32,9 @@ const LevelSettingPage = () => {
         >
           선택한 대화 레벨에 따라 답변의 길이 수가 달라져요!
         </div>
-        <LevelBtn
-          text={"Pre"}
-          underText={"초급"}
-          color={"white"}
-          onClick={handleClickButton("Pre")}
-        />
-        <LevelBtn
-          text={"Mid"}
-          underText={"중급"}
-          color={"white"}
-          onClick={handleClickButton("Mid")}
-        />
-        <LevelBtn
-          text={"High"}
-          underText={"고급"}
-          color={"white"}
-          onClick={handleClickButton("High")}
-        />
+        <LevelBtn text={"Pre"} underText={"초급"} color={"white"} />
+        <LevelBtn text={"Mid"} underText={"중급"} color={"white"} />
+        <LevelBtn text={"High"} underText={"고급"} color={"white"} />
       </div>
     </div>
   );
