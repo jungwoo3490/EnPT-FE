@@ -1,5 +1,4 @@
 import logoImage from "../assets/logo.png";
-import CategoriBtn from "../components/CategoriBtn";
 import "../styles/EndPage.css";
 import houseIcone from "../assets/houseicon.png";
 import repeatIcone from "../assets/repeaticon.png";
