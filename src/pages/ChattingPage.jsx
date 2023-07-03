@@ -5,6 +5,8 @@ import sendIcon from "../assets/sendicon.png";
 import "../styles/ChattingPage.css";
 import axios from "axios";
 import ChatBlock1 from "../components/ChatBlock1";
+import soundicon from "../assets/soundIcon.png";
+import PlaySound from "../components/PlaySound";
 
 const styles = {
   chatBar: {
@@ -138,7 +140,12 @@ function ChattingPage() {
         <div className="message-list1" style={{ width: "1960px" }}>
           {responseMessages.map((message) => (
             <div key={message.id} className="message" width="1960px">
-              <ChatBlock1 text={message.text} />
+              <ChatBlock1 text={message.text} />{" "}
+              <img
+                src={soundicon}
+                alt=""
+                onClick={() => PlaySound(message.text)}
+              ></img>
             </div>
           ))}
         </div>
