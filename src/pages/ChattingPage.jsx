@@ -7,6 +7,7 @@ import axios from "axios";
 import ChatBlock1 from "../components/ChatBlock1";
 import soundicon from "../assets/soundIcon.png";
 import PlaySound from "../components/PlaySound";
+import endImg from "../assets/exitButtom.png";
 
 const styles = {
   chatBar: {
@@ -64,7 +65,18 @@ const styles = {
   frame: {
     width: "100%",
   },
+  im: {
+    width: 265,
+    height: 60,
+    position: "absolute",
+    top: 20,
+    right: 100,
+  },
 };
+
+function handleChange() {
+  window.location.href = "/end";
+}
 function ChattingPage() {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -129,6 +141,13 @@ function ChattingPage() {
   return (
     <>
       <img src={logoImage} alt="" className="logoimage" />
+      <img
+        style={styles.im}
+        src={endImg}
+        alt=""
+        className="logoimage"
+        onClick={handleChange}
+      />
       <div style={styles.chat}>
         <div className="message-list" style={{ width: "1960px" }}>
           {messages.map((message) => (
