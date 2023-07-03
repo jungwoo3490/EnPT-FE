@@ -5,10 +5,17 @@ import topicImage1 from "../assets/topicimage1.png";
 import topicImage2 from "../assets//topicimage2.png";
 import topicImage3 from "../assets/topicimage3.png";
 import topicImage4 from "../assets/topicimage4.png";
-function handleClick() {
-  window.location.href = '/new';
-}
+
+import { useNavigate } from 'react-router-dom';
+
 const TopicSettingPage = () => {
+
+    const navigate = useNavigate();
+  
+    function handleClick() {
+        navigate('/new');
+    };
+
   return (
     <div className="TopicSettingPage">
       <img src={logoImage} alt="" className="logoimage" />

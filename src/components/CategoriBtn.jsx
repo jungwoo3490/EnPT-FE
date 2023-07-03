@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/CategoryButton.css";
+import { useNavigate } from 'react-router-dom'
 
 const styles = {
   bt: {
@@ -30,11 +31,16 @@ const styles = {
   },
 };
 
-function handleClick() {
-  window.location.href = '/chatroom';
-}
+
+
 
 const CategoriBtn = ({ text, underText, imgSrc, onClick, color }) => {
+  const navigate = useNavigate();
+  
+  function handleClick() {
+    navigate('/chatroom');
+  };
+
   return (
     <button
       style={{

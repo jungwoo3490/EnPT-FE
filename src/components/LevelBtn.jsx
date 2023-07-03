@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
   bt: {
@@ -15,10 +16,13 @@ const styles = {
   },
 };
 
-function handleClick() {
-  window.location.href = '/select';
-}
 const LevelBtn = ({ text, underText, onClick, color }) => {
+  const navigate = useNavigate();
+  
+  function handleClick() {
+    navigate('/select');
+  };
+
   return (
     <button
       style={{
