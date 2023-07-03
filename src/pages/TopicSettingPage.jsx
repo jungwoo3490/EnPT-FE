@@ -5,7 +5,9 @@ import topicImage1 from "../assets/topicimage1.png";
 import topicImage2 from "../assets//topicimage2.png";
 import topicImage3 from "../assets/topicimage3.png";
 import topicImage4 from "../assets/topicimage4.png";
-
+function handleClick() {
+  window.location.href = '/new';
+}
 const TopicSettingPage = () => {
   return (
     <div className="TopicSettingPage">
@@ -48,7 +50,8 @@ const TopicSettingPage = () => {
             color={"white"}
           />
         </div>
-        <button className="selfmadebutton">
+        <button className="selfmadebutton"
+          onClick={handleClick}>
           <div
             style={{
               height: "20px",

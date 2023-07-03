@@ -29,6 +29,11 @@ const styles = {
     marginLeft: "38px",
   },
 };
+
+function handleClick() {
+  window.location.href = '/chatroom';
+}
+
 const CategoriBtn = ({ text, underText, imgSrc, onClick, color }) => {
   return (
     <button
@@ -44,7 +49,7 @@ const CategoriBtn = ({ text, underText, imgSrc, onClick, color }) => {
         letterSpacing: "-1px",
       }}
       className="button"
-      onClick={onClick}
+      onClick={handleClick}
     >
       <div style={styles.bt}>{text}</div>
       <div style={{ display: "flex" }}>
