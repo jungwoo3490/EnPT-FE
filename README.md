@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+<p align = "center">
+<img src="https://github.com/4th-umc-hackathon/.github/assets/86403488/5d514581-c2df-4053-bad6-41b637e5340e" width="800"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔠 EnPT
+---
+EnPT는 GPT 3.5를 기반으로 실시간 영어 작문 연습을 도와주는 서비스 입니다.
+레벨에 따라 달라지는 답변도 확인해 볼까요?
+다양한 대화 상황을 선택해 당신의 영작 실력을 키워보세요!
 
-## Available Scripts
+👩‍💻 Contributor
+---
+- [PM] 초코(김관용)
+- [FE] 데이빗(김태영), 제이(이정우), 히동(김소희), 메이(최혜인)
+- [BE] 제이드(양성원), 버블(홍다연), 비비(배은경), 에이치(강현)
 
-In the project directory, you can run:
+✌️ 핵심 기능
+---
+✔ [주제별 작문] 카테고리를 나눠 작문 주제 결정에 도움을 주고 원하는 주제에 대해 직접 커스텀하기
 
-### `npm start`
+✔ [맞춤형 질의응답] 레벨(초급, 중급, 고급)에 따라 답변의 길이가 달라지며 이어서 대화 가능!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✔ [보완점 피드백] 답변이 마음에 들지 않을 경우 재답변을 요청해 최적의 문장 도출
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✔ [영어 문법 검사] 본인이 쓴 영어 문법 검사를 통해 영어 실력 향상 도모
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🛠 사용 기술
+---
+- React.js
+- SpringBoot, JPA
+- ChatGPT❤️
+- Amazon EC2, Amazon RDS
+- MySQL
+- Docker
